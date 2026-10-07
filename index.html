@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Gustov — Portfolio</title>
+
+  <!-- Font Poppins dari Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- File tampilan -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="loading">
+
+  <!-- ========== LOADING SCREEN ========== -->
+  <div id="loader">
+    <div class="panel top"></div>
+    <div class="panel bottom"></div>
+
+    <div class="ld-box">
+      <div class="ld-name">
+        <span style="--i:0">G</span>
+        <span style="--i:1">U</span>
+        <span style="--i:2">S</span>
+        <span style="--i:3">T</span>
+        <span style="--i:4">O</span>
+        <span style="--i:5">V</span>
+      </div>
+      <small>PORTFOLIO — 2026</small>
+    </div>
+
+    <div class="ld-count"><span id="pct">0</span><em>%</em></div>
+    <div class="ld-line"><i id="bar"></i></div>
+  </div>
+
+  <!-- Garis progress scroll di paling atas -->
+  <div id="prog"></div>
+
+
+  <!-- ========== NAVBAR ========== -->
+  <nav>
+    <span class="logo">G<b>.</b></span>
+    <a href="#home" class="on">Home</a>
+    <a href="#about">About</a>
+    <a href="#journey">Journey</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <button id="theme" aria-label="Ganti tema">◐</button>
+  </nav>
+
+
+  <!-- ========== HOME ========== -->
+  <section id="home" class="hero">
+
+    <div class="rv">
+      <h1>Hi, I'm <span>Gustov</span></h1>
+      <div class="role"><span id="typed">Web Developer Pemula</span><i class="caret"></i></div>
+      <p>
+        Siswa Rekayasa Perangkat Lunak dari DKI Jakarta. Saya sedang belajar web development,
+        dengan cita-cita menjadi game developer.
+      </p>
+
+      <div class="btns">
+        <a class="btn p" href="#projects">Explore Work →</a>
+        <a class="btn" href="#contact">Hubungi Saya</a>
+      </div>
+
+      <small class="conn">CONNECT</small>
+      <div class="soc">
+        <a href="https://instagram.com/gustov4742" target="_blank" rel="noopener" title="Instagram">IG</a>
+        <a href="https://wa.me/6289510279181" target="_blank" rel="noopener" title="WhatsApp">WA</a>
+        <a href="mailto:gustovazammahendra@gmail.com" title="Email">@</a>
+      </div>
+    </div>
+
+    <div class="pic rv">
+      <div class="ph"><img src="images/foto.jpg" alt="Foto Gustov"></div>
+      <div class="chip"><em>&lt;/&gt;</em>HTML, CSS &amp; JavaScript</div>
+      <div class="chip"><em>↗</em>Belajar setiap hari</div>
+      <div class="chip"><em>♥</em>Dibuat dengan cinta</div>
+    </div>
+
+  </section>
+
+
+  <!-- Teks berjalan -->
+  <div class="marq" aria-hidden="true">
+    <div>
+      HTML<b>✦</b>CSS<b>✦</b>JAVASCRIPT<b>✦</b>BELAJAR<b>✦</b>MEMBANGUN<b>✦</b>MELUNCURKAN<b>✦</b>HTML<b>✦</b>CSS<b>✦</b>JAVASCRIPT<b>✦</b>BELAJAR<b>✦</b>MEMBANGUN<b>✦</b>MELUNCURKAN<b>✦</b>
+    </div>
+  </div>
+
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about">
+    <span class="lbl rv">Discover</span>
+    <h2 class="rv">About Me</h2>
+
+    <div class="about">
+      <div class="ph2 rv"><img src="images/foto.jpg" alt="Foto Gustov"></div>
+
+      <div class="rv">
+        <div class="cols">
+          <div>
+            <h3>Who Am I</h3>
+            <p>
+              Saya Gustov, siswa jurusan Rekayasa Perangkat Lunak dari DKI Jakarta. Saya belajar coding
+              sejak setengah tahun lalu, dan cita-cita saya adalah menjadi game developer.
+            </p>
+          </div>
+          <div>
+            <h3>My Approach</h3>
+            <p>
+              Saya belajar dari menonton tutorial, lalu langsung mempraktikkannya sendiri. Dengan begitu
+              konsepnya lebih cepat paham dan hasilnya langsung terlihat.
+            </p>
+          </div>
+        </div>
+
+        <div class="det">
+          <h3>Personal Details</h3>
+          <div>
+            <p><small>Nama</small>Gustov</p>
+            <p><small>Lokasi</small>DKI Jakarta</p>
+            <p><small>Jurusan</small>Rekayasa Perangkat Lunak</p>
+            <p><small>Cita-cita</small>Game Developer</p>
+            <p><small>Hobi</small>Bulu Tangkis</p>
+            <p><small>Bahasa</small>Indonesia, Inggris</p>
+            <p><small>Email</small><span>gustovazammahendra@gmail.com</span></p>
+            <p><small>WhatsApp</small>+62 895-1027-9181</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== JOURNEY ========== -->
+  <section id="journey">
+    <span class="lbl rv">Career Path</span>
+    <h2 class="rv">Learning Journey</h2>
+
+    <div class="tl">
+      <div class="card rv">
+        <small>TAHAP 01</small>
+        <h3>Struktur dengan HTML</h3>
+        <p>Belajar membangun kerangka halaman web yang rapi dan bermakna.</p>
+        <div class="tags"><span>HTML</span></div>
+      </div>
+
+      <div class="card rv">
+        <small>TAHAP 02</small>
+        <h3>Tampilan dengan CSS</h3>
+        <p>Mengatur warna, layout, dan membuat tampilan responsif.</p>
+        <div class="tags"><span>CSS</span><span>RESPONSIVE</span></div>
+      </div>
+
+      <div class="card rv">
+        <small>TAHAP 03</small>
+        <h3>Interaksi dengan JavaScript</h3>
+        <p>Membuat halaman hidup lewat logika dan interaksi.</p>
+        <div class="tags"><span>JAVASCRIPT</span><span>DOM</span></div>
+      </div>
+
+      <div class="card rv">
+        <small>TAHAP 04 · TUJUAN</small>
+        <h3>Menuju Game Development</h3>
+        <p>Setelah dasar web kuat, lanjut belajar pemrograman game.</p>
+        <div class="tags"><span>GAME DEV</span></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills">
+    <span class="lbl rv">Skills &amp; Tools</span>
+    <h2 class="rv">My Tech Stack</h2>
+
+    <div class="g3">
+      <div class="card tech rv"><b>&lt;/&gt;</b><h3>HTML</h3><p>Struktur halaman web.</p></div>
+      <div class="card tech rv"><b>{ }</b><h3>CSS</h3><p>Tampilan yang indah dan responsif.</p></div>
+      <div class="card tech rv"><b>JS</b><h3>JavaScript</h3><p>Logika dan interaksi.</p></div>
+    </div>
+  </section>
+
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects">
+    <span class="lbl rv">Portfolio</span>
+    <h2 class="rv">Selected Works</h2>
+
+    <div class="g3">
+      <div class="card rv">
+        <small>SEGERA HADIR</small>
+        <h3>Project pertama saya</h3>
+        <p>Sedang dikerjakan.</p>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="contact">
+    <span class="lbl rv">Get in touch</span>
+    <h2 class="rv">Contact Me</h2>
+    <p class="rv">Punya ide atau mau berkolaborasi? Kirim pesan.</p>
+
+    <div class="btns rv">
+      <a class="btn p" href="mailto:gustovazammahendra@gmail.com">Email</a>
+      <button class="btn" id="copy" type="button">Salin Email</button>
+      <a class="btn" href="https://wa.me/6289510279181" target="_blank" rel="noopener">WhatsApp ↗</a>
+      <a class="btn" href="https://instagram.com/gustov4742" target="_blank" rel="noopener">Instagram ↗</a>
+    </div>
+
+    <!-- Form: pesan dikirim lewat WhatsApp -->
+    <form id="cf" class="card cform rv">
+      <input id="cn" placeholder="Nama kamu" required>
+      <textarea id="cm" placeholder="Tulis pesanmu di sini..." required></textarea>
+      <button class="btn p" type="submit">Kirim lewat WhatsApp →</button>
+    </form>
+  </section>
+
+  <footer>© 2026 Gustov — Dibuat dengan cinta.</footer>
+
+
+  <!-- Notifikasi kecil & tombol ke atas -->
+  <div id="toast"></div>
+  <button id="totop" aria-label="Ke atas">↑</button>
+
+  <!-- File logika -->
+  <script src="script.js"></script>
+</body>
+
+</html>
