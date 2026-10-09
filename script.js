@@ -13,7 +13,7 @@ const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 // ===== 1. LOADING =====
 // LOAD_MS = lama loading (milidetik). Makin kecil makin cepat.
-const LOAD_MS = 5000;
+const LOAD_MS = 2000;
 
 const loader = $("loader");
 const bar = $("bar");
