@@ -1,0 +1,7 @@
+  sebelum perbarui
+  
+  
+  
+  git add .
+  git commit -m "update portofolio"
+  git push

@@ -837,3 +837,18 @@ footer {
     animation-duration: .01s;
   }
 }
+
+/* ===== ANIMASI GANTI TEMA ===== */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+/* Matikan transisi lain selama ganti tema supaya tidak bentrok */
+html.switching,
+html.switching *,
+html.switching *::before,
+html.switching *::after {
+  transition: none !important;
+}

@@ -114,9 +114,48 @@ document.querySelectorAll("section").forEach((s) => sectionObserver.observe(s));
 
 
 // ===== 5. GANTI TEMA =====
-$("theme").onclick = () => {
+$("theme").onclick = (e) => {
   const root = document.documentElement;
-  root.dataset.theme = root.dataset.theme === "light" ? "dark" : "light";
+  const next = root.dataset.theme === "light" ? "dark" : "light";
+  const change = () => (root.dataset.theme = next);
+
+  // Browser lama atau animasi dimatikan: ganti langsung saja
+  if (!document.startViewTransition || reduceMotion) {
+    change();
+    return;
+  }
+
+  // Titik awal lingkaran = tengah tombol tema
+  const r = e.currentTarget.getBoundingClientRect();
+  const x = r.left + r.width / 2;
+  const y = r.top + r.height / 2;
+
+  // Jari-jari sampai lingkaran menutupi seluruh layar
+  const radius = Math.hypot(
+    Math.max(x, innerWidth - x),
+    Math.max(y, innerHeight - y)
+  );
+
+  root.classList.add("switching");
+  const transition = document.startViewTransition(change);
+
+  transition.ready.then(() => {
+    root.animate(
+      {
+        clipPath: [
+          `circle(0px at ${x}px ${y}px)`,
+          `circle(${radius}px at ${x}px ${y}px)`,
+        ],
+      },
+      {
+        duration: 800, // lama animasi (ms), ubah sesukamu
+        easing: "ease-in-out",
+        pseudoElement: "::view-transition-new(root)",
+      }
+    );
+  });
+
+  transition.finished.finally(() => root.classList.remove("switching"));
 };
 
 
