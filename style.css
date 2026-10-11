@@ -852,3 +852,9 @@ html.switching *::before,
 html.switching *::after {
   transition: none !important;
 }
+
+a.card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
